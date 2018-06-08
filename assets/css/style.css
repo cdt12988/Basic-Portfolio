@@ -1,0 +1,130 @@
+/*============================
+	    Color Palette
+============================*/
+/*
+	*	Headings/Backgrounds 			#4AAAA5
+	*	Regular Font					#777
+	*	Background 						#FFF
+	*	Main Header Border				#CCC
+	*	Footer Background				#666
+	*	Main Content Border				#DDD
+*/
+
+/*============================
+	    Global Styles
+============================*/
+
+html {
+	
+}
+body {
+	background-image: url(../images/what-the-hex.png);
+	background-repeat: repeat;
+	width: 100%;
+	height: 100%;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777;
+}
+
+
+/*============================
+	    Header & Footer
+============================*/
+
+header {
+	background: #FFF;
+	border: 1px solid #CCC;
+	margin-bottom: 35px;
+	float: left;
+	width: 100%;
+}
+header a {
+	text-decoration: none;
+	color: #4AAAA5;
+}
+header ul {
+	float: right;
+	list-style-type: none;
+	display: inline;
+	margin-right: 200px;
+	padding-top: 5px;
+}
+header li {
+	float: left;
+	padding: 25px;
+	margin: 0;
+}
+h1, h2 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+h1 {
+	color: #FFF;
+	font-size: 25px;
+	background: #4AAAA5;
+	width: 250px;
+	text-align: center;
+	padding: 25px 0;
+	margin-left: 200px;
+	float: left;
+}
+h1 a {
+	color: #FFF;
+}
+h2 {
+	font-size: 25px;
+	color: #4AAAA5;
+	width: 900px;
+	margin: 0 auto;
+	padding: 15px 0;
+	border-bottom: 1px solid #4AAAA5;
+}
+footer {
+	background: #666;
+	color: #FFF;
+	text-align: center;
+	font-size: 12px;
+	border-top: 5px solid #4AAAA5;
+	padding: 0px;
+	position: fixed;
+	left: 0; bottom: 0;
+	width: 100%;
+	height: 50px;
+}
+footer p {
+	padding-top: 35px;
+}
+
+/*============================
+	      About Me
+============================*/
+
+section {
+	clear: both;
+	background: #FFF;
+	border: 1px solid #DDD;
+	max-width: 960px;
+	margin: 0 auto;
+	line-height: 1.6;
+	overflow: auto;
+}
+section img {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+section p {
+	padding-bottom: 15px;
+}
+.content-wrapper {
+	padding: 25px 20px 25px 20px;
+}
+
+/*============================
+	    Contact Form
+============================*/
+
+
+
+/*============================
+	    Portfolio
+============================*/

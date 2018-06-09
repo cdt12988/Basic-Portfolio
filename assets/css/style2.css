@@ -1,0 +1,136 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	min-height: 100%;
+	display: grid;
+	grid: 
+		"header header header header" 5em
+		". main main ." auto
+		"footer footer footer footer" 3.5em
+		/ 1fr 2fr 2fr 1fr;
+	line-height: 1.6;
+	background-image: url(../images/what-the-hex.png);
+	background-repeat: repeat;
+	width: 100%;
+	height: 100%;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777;
+
+}
+header {
+	grid-area: header;
+	display: grid;
+	grid: 
+		". heading . nav ." 1fr
+		/ 1fr 1.25fr .75fr 2fr 1fr;
+	background: #FFF;
+	border-bottom: 1px solid #CCC;
+	width: 100%;
+}
+header a {
+	text-decoration: none;
+	color: #4AAAA5;
+}
+.header {
+	grid-area: heading;
+	font-size: 1.75em;
+	background: #4AAAA5;
+	text-align: center;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header a {
+	color: #FFF;
+}
+.nav {
+	grid-area: nav;
+
+}
+.nav ul {
+	float: right;
+	list-style-type: none;
+	display: inline;
+}
+.nav li {
+	font-size: 1.2em;
+	float: left;
+	padding: 1.2em 0 1em 2em;
+	margin: 0;
+}
+h1, h2 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+/*.header {
+	grid-area: header;
+	background: pink;
+}
+.nav {
+	grid-area: nav;
+	background: teal;
+}
+*/
+main {
+	grid-area: main;
+	display: grid;
+	grid: 
+		"page-heading" 1fr
+		"content" auto
+		/ 1fr;
+	margin-bottom: 2.5em;
+}
+.page-header {
+	grid-area: page-heading;
+	background: #FFF;
+	height: 2.5em;
+	margin: 0 auto;
+	margin-top: 1em;
+	font-size: 1.75em;
+	color: #4AAAA5;
+	border-left: 1px solid #DDD;
+	border-top: 1px solid #DDD;
+	border-right: 1px solid #DDD;
+/*	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); */
+}
+.page-header div {
+	border-bottom: 1px solid #4AAAA5;
+	height: 78%;
+	
+	margin-left: 1em;
+	margin-right: 1em;
+	padding-top: .5em;
+}
+.page-content {
+	grid-area: content;
+	background: #FFF;
+	border-left: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+	border-right: 1px solid #DDD;
+/*	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); */
+}
+.page-content img {
+	float: left;
+	margin: 1em;
+	margin-bottom: 0;
+	max-width: 100%;
+}
+.page-content p {
+	padding: 1em;
+	margin: 0;
+}
+footer {
+	clear: both;
+	grid-area: footer;
+	background: #666;
+	color: #FFF;
+	font-size: .75em;
+	border-top: 5px solid #4AAAA5;
+	text-align: center;
+}
+footer p {
+	padding-top: 2.5em;
+}

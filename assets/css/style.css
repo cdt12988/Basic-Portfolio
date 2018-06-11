@@ -128,3 +128,53 @@ section p {
 /*============================
 	    Portfolio
 ============================*/
+/*
+.project-img {
+	background-image: url(https://picsum.photos/300/300?image=1062);
+	height: 250px;
+	width: 250px;
+	position: relative;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+*/
+.project-img {
+	position: relative;
+	height: 250px;
+	width: 250px;
+	margin: 0;
+	padding: 0;
+
+}
+.project-text {
+	width: 75%;
+	height: 20%;
+	position: absolute;
+	right: 0;
+	bottom: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #FFF;
+	font-size: 1.2em;
+	background: #4AAAA5;
+	opacity: 0.80;
+/* 	background: rgba(74,170,165,0.75); */
+	
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+.child-img img {
+	height: 250px;
+	width: 250px;
+	position: relative;
+
+}
+
+
+.child-img:hover {
+	opacity: 0.85;
+	border-radius: 50%;
+}
+.child-img:hover + .project-text,
+.project-text:hover {
+	opacity: 1;
+}

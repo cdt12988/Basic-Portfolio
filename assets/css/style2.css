@@ -177,6 +177,55 @@ main {
 	margin: 0;
 }
 
+
+form {
+	/* to center the form */
+	margin: 0 auto;
+	width: 100%;
+	/* to see the outline of the form */
+	padding: 1em;
+}
+form div + div {
+	margin-top: 1em;
+}
+label {
+	/* to make sure all labels are the same size and alignment */
+	display: block;
+	width: 100%;
+}
+input, textarea {
+	/* to make sure all text fields have the same fonts */
+	font: 1em sans-serif;
+	/* to give the same size to all text fields */
+	width: 100%;
+/* 	box-sizing: border-box; */
+	/* to harmonize the look/feel of the text field border */
+/* 	border: 1px solid #999; */
+}
+input:focus, textarea:focus {
+	/* to give a little highlight to the active field */
+	border-color: #000;
+}
+textarea {
+	/* to properly align multiline text fields with their labels */
+/* 	vertical-align: top; */
+	/* to give enough room to type some text */
+	height: 5em;
+}
+button {
+	/* to position the buttons to the same position of the text fields */
+/* 	padding-left: 90px; /* same as the label elements */ */
+	transition: transform .2s;
+}
+button:hover{
+	transform: scale(1.1);
+}
+button {
+	/* this extra margin represents about the same space as the space between the labels and the text fields  */
+/* 	margin-left: .5em; */
+	cursor: pointer;
+}
+
 /*============================
 	      Footer
 ============================*/

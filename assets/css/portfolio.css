@@ -80,12 +80,13 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+	outline: 1px solid rgba(74, 170, 165, 0.5);
 }
 
 
 .project-img img:hover,
 .project-img:hover {
-	opacity: 0.85;
+	opacity: 0.80;
 /* 	border-radius: 50%; */
 /* 	box-shadow: inset 0 0 10px 10px #4AAAA5; */
 }
@@ -93,4 +94,10 @@
 .project-text:hover {
 /* 	opacity: 1; */
 	background: rgba(74, 170, 165, 1);
+}
+.project-wrap a:focus {
+	outline: none;
+}
+.project-wrap a:focus + .project-img {
+	border: 3px solid #4AAAA5;
 }

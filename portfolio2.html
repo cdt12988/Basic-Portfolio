@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+	
+<head>
+	<title>Cody Thompson - Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Cody Thompson's Portfolio">
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/new-style-flex-header.css">
+</head>
+
+<body>
+	
+	<header role="banner">
+		<h1><a href="index3.html">Cody Thompson</a></h1>
+		<nav role="navigation">
+			<ul>
+				<li><a href="index3.html">About</a></li>
+				<li><a href="portfolio2.html">Portfolio</a></li>
+				<li><a href="contact.html">Contact</a></li>
+<!-- 				<li><a href="#">&equiv;</a></li> -->
+			</ul>
+		</nav>
+	</header>
+	
+<main role="main">
+<article role="article">
+	<h2 class="page-header">Portfolio</h2>
+	<div class="page-content">
+		<div class="portfolio-wrap">
+			<div class="project-wrap" id="proj-1">
+				<a href="https://scratch.mit.edu/projects/227415079/" target="_blank">
+					<div class="project-img"><img id="proj-1-img" src="assets/images/mouse-hunters-cropped.png" alt="Mouse Hunters Game"></div>
+					<div class="project-text" onmouseover="chopac('proj-1-img')" onmouseout="reopac('proj-1-img')">Mouse Hunters</div>
+				</a>
+			</div>
+			<div class="project-wrap" id="proj-2">
+				<a href="#">
+					<div class="project-img"><img id="proj-2-img" src="assets/images/puggers.jpeg" alt="Hangman Game"></div>
+					<div class="project-text" onmouseover="chopac('proj-2-img')" onmouseout="reopac('proj-2-img')">Hangman Game</div>
+				</a>
+			</div>
+			<div class="project-wrap" id="proj-3">
+				<a href="#">
+					<div class="project-img"><img id="proj-3-img" src="assets/images/puggers.jpeg" alt="RPG Game"></div>
+					<div class="project-text" onmouseover="chopac('proj-3-img')" onmouseout="reopac('proj-3-img')">RPG Game</div>
+				</a>
+			</div>
+			<div class="project-wrap" id="proj-4">
+				<a href="#">
+					<div class="project-img"><img id="proj-4-img" src="assets/images/puggers.jpeg" alt="Trivia"></div>
+					<div class="project-text" onmouseover="chopac('proj-4-img')" onmouseout="reopac('proj-4-img')">Trivia</div>
+				</a>
+			</div>
+			<div class="project-wrap" id="proj-5">
+				<a href="#">
+					<div class="project-img"><img id="proj-5-img" src="assets/images/puggers.jpeg" alt="Info Widget"></div>
+					<div class="project-text" onmouseover="chopac('proj-5-img')" onmouseout="reopac('proj-5-img')">Info Widget</div>
+				</a>
+			</div>
+			<div class="project-wrap" id="proj-6">
+				<a href="#">
+					<div class="project-img"><img id="proj-6-img" src="assets/images/puggers.jpeg" alt="Rock Paper Scissors"></div>
+					<div class="project-text" onmouseover="chopac('proj-6-img')" onmouseout="reopac('proj-6-img')">Rock Paper Scissors</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</article>
+</main>
+	
+<footer role="contentinfo">
+		<p>&copy; Cody Thompson 2018</p>
+</footer>
+
+</body>
+
+<script>
+	function chopac(id) {
+		document.getElementById(id).style.opacity = 0.85;
+	}
+	function reopac(id) {
+		document.getElementById(id).style.opacity = 1;
+	}
+</script>
+</html>

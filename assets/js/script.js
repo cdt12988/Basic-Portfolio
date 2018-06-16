@@ -1,90 +1,42 @@
+/* Change opacity of the given portfolio image */
 function chopac(id) {
-		document.getElementById(id).style.opacity = 0.85;
+		document.getElementById(id).className = "project-img js-transparent";
 	}
-	function reopac(id) {
-		document.getElementById(id).style.opacity = 1;
+
+/* Reset opacity of the given portfolio image */
+function reopac(id) {
+	document.getElementById(id).className = "project-img";
+}
+
+/* Toggle the Nav Icon to show/hide the Nav Links */
+function toggle_nav() {
+	var x = document.getElementById("nav-bar");
+    if (x.className === "innactive") {
+        x.className = "active";
+        document.getElementById("nav-icon").className += " clicked";
+    } else {
+        x.className = "innactive";
+        document.getElementById("nav-icon").className = "nav-icon";
 	}
-	function toggle_nav() {
-		var x = document.getElementById("nav-bar");
-	    if (x.className === "innactive") {
-	        x.className = "active";
-	        document.getElementById("nav-icon").className += " clicked";
-	    } else {
-	        x.className = "innactive";
-	        document.getElementById("nav-icon").className = " nav-icon";
-		}
-	}
-	
-// 	var bar = document.querySelector("nav-bar");
+}
 
-/*
-	document.addEventListener("click", function(click) {
-		if (click.target.closest("#nav-icon")) return;
-			icon.classList.add("js-hide");
-		});
-*/
-		
-/*
-	document.addEventListener("click", function(event) {
-		if (event.target.closest(".nav-bar")) return;
-			bar.classList.add("js-hide");
-		});
-*/
-		
-/*
-		var box = document.querySelector(".box");
-
-// Detect all clicks on the document
-document.addEventListener("click", function(event) {
-	// If user clicks inside the element, do nothing
-	if (event.target.closest(".box")) return;
-
-	// If user clicks outside the element, hide it!
-	box.classList.add("js-is-hidden");
-});
-*/
-/*
-var bar = document.getElementById("nav-bar");
-
-// Detect all clicks on the document
-document.addEventListener("click", function(event) {
-	// If user clicks inside the element, do nothing
-	if (bar.className === "innactive") {
-	if (event.target.closest(".nav-bar")) return;
-
-	// If user clicks outside the element, hide it!
-	bar.className += " js-hide";
-}});
-*/
-
-
-
+/* Closes the Nav Link Menu if user clicks anywhere outside it or the Nav Icon */
 var nav = document.querySelector(".innactive");
 
-// Detect all clicks on the document
+	/* Detects whenever the user clicks anywhere on page */
 document.addEventListener("click", function(event) {
-	
+	/* Only performs this function if the Nav Link Menu is already active */
 	if (document.getElementById("nav-bar").className === "active") {
-	// If user clicks inside the element, do nothing
-	if (event.target.closest(".active") || event.target.closest(".nav-icon")) return;
-
-	// If user clicks outside the element, hide it!
-	nav.className = "innactive";
-// } else {
-// 	document.getElementById.className = "innactive"
-}
-}
-						  
-);
-
-
-/*
-
-function toggle() {
-	if(document.getElementById("box").className === "innactive") {
-		document.getElementById("box").className = "js-active"
-	} else {
-		document.getElementById("box").className = "innactive"
+		/* Does nothing if the user clicks either in the Nav Link Menu or on the Nav Icon */
+		if (event.target.closest(".active") || event.target.closest(".nav-icon")) {
+			return;
+		} else {
+		/* Closes the Nav Link Menu if the function isn't broken (if the user clicks somewhere else) */
+		nav.className = "innactive";
+		/* Resets the CSS for the Nav Link back to normal */
+		document.getElementById("nav-icon").className = "nav-icon";
+		}
 	}
 }
-*/
+						  
+); /* Closes the original click event-listener */

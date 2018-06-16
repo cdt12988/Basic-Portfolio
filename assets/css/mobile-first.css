@@ -30,8 +30,9 @@ body {
 	color: #777;
 	line-height: 1.6;
 	font-size: 1.1em;
-	min-height: 320px;
-	
+/* 	min-height: 320px; */
+	min-height: 100vh;
+		
 	display: grid;
 	grid: 
 		"header header header" 10vh
@@ -251,7 +252,13 @@ article {
 	background: #FFF;
 	padding: 5%;
 	border: 1px solid #DDD;
+	
+	
+	
 	min-width: 275px;
+
+
+
 }
 .page-header {
 	border-bottom: 1px solid #4AAAA5;
@@ -270,9 +277,17 @@ article {
 .page-content img {
 	float: none;
 	margin: 1em auto;
-/* 	margin-bottom: 0; */
+	
+	
+
 	max-width: 300px;
 	min-width: 250px;
+/*
+	min-width: 50vw;
+	max-width: 300px;
+*/
+
+
 	width: 33.3vw;
 	height: auto;
 	display: block;
@@ -303,7 +318,6 @@ article {
 	max-width: 250px;
 	margin: 0;
 	padding: 0 2.5% 5% 2.5%;
-
 }
 .project-text {
 	width: 75%;
@@ -316,7 +330,7 @@ article {
 	justify-content: center;
 	color: #FFF;
 	font-size: 1.15em;
-	background: rgba(74,170,165, 0.9);	
+	background: rgba(74,170,165, 0.85);	
 	font-family: 'Georgia', Times, Times New Roman, serif;	
 }
 
@@ -337,14 +351,25 @@ article {
 	border: 3px solid #4AAAA5;
 	
 }
+.js-transparent {
+	opacity: 0.80;
+}
+.js-opaque {
+	opacity: 1;
+}
 
 /*============================
 	     Contact Form
 ============================*/
 form {
 	margin: 0 auto;
+	
+	
+	
 	width: auto;
-/* 	padding: 1em 1.5em; */
+
+
+
 	padding: 0;
 	font-size: 0.8em;
 	min-height: 60vh;
